@@ -1,26 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Base from 'terra-base';
+import Button from 'terra-button';
 
-const App: React.FC = () => {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const buttonStyle = { margin: '5px' };
+
+const App = () => (
+  <Base className="App" locale="en">
+    <Button
+      text="Convert Terra to Typescript"
+      onClick={() => alert('Not yet!')}
+      style={buttonStyle}
+    />
+  </Base>
+);
 
 export default App;
